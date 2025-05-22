@@ -1,0 +1,41 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.hover {
+    color: aqua;
+    font-size: 72px;
+    animation: Move 1s infinite;
+    transition: 3;
+    
+}
+.hover:hover {
+    color: chartreuse;
+    cursor: pointer;
+
+    
+}
+
+@media screen and (min-width: 768px) {
+    .hover {
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .hover {
+        font-size: 10px;
+    }
+}
+  
+@keyframes Move {
+    from{
+        color: aqua;
+        text-decoration-line: none;
+    }
+    to{
+        color: blanchedalmond;
+        text-decoration-line: underline;
+    }
+}
